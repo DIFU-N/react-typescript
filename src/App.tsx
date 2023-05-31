@@ -1,6 +1,9 @@
 import Greet from "./components/Greet"
+import { Heading } from "./components/Heading"
+import { Oscar } from "./components/Oscar"
 import Person from "./components/Person"
 import PersonList from "./components/PersonList"
+import { Status } from "./components/Status"
 
 function App() {
   const personName = {
@@ -26,6 +29,11 @@ function App() {
       <Greet name='People' messageCount={5} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={nameList} />
+      <Status status="error" />
+      <Heading>Placeholder Text</Heading>
+      <Oscar>
+        <Heading>Oscar Pistorious did that shii</Heading>
+      </Oscar>
     </div>
   )
 }
