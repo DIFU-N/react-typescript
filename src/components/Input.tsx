@@ -8,9 +8,9 @@ type InputProps = {
 //it is also possible to use Props by destructuring the InputProps obj as so:
 export const Input = ({value, handleChange}: InputProps) => {
   //this keeps the eventchange fxn the same, whether it's passed in or not
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(event);
-  };
+  // const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   console.log(event);
+  // };
   return (
     <div>
       <input type="text" value={value} onChange={handleChange} />
