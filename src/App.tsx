@@ -6,6 +6,7 @@ import { Oscar } from "./components/Oscar"
 import Person from "./components/Person"
 import PersonList from "./components/PersonList"
 import { Status } from "./components/Status"
+import { StylesContainer } from "./components/StylesContainer"
 
 function App() {
   const personName = {
@@ -40,6 +41,7 @@ function App() {
         console.log('button clicked', event, id);
       }} />
       <Input value="" handleChange={(event) => console.log('this shii', event)} />
+      <StylesContainer styles={{border: '3px solid black', color: 'darkseagreen'}} />
     </div>
   )
 }
