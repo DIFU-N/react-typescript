@@ -7,6 +7,7 @@ import Person from "./components/Person"
 import PersonList from "./components/PersonList"
 import { Status } from "./components/Status"
 import { StylesContainer } from "./components/StylesContainer"
+import { MutableRef } from "./components/ref/MutableRef"
 import { Counter } from "./components/state/Counter"
 import { LoggedIn } from "./components/state/LoggedIn"
 
@@ -46,6 +47,7 @@ function App() {
       <StylesContainer styles={{border: '3px solid black', color: 'darkseagreen'}} />
       <LoggedIn />
       <Counter />
+      <MutableRef />
     </div>
   )
 }
