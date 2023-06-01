@@ -13,7 +13,7 @@ import { ClassCounter } from "./components/class/Counter"
 import { MutableRef } from "./components/ref/MutableRef"
 import { Counter } from "./components/state/Counter"
 import { LoggedIn } from "./components/state/LoggedIn"
-import { List } from "./generics/List"
+import { List } from "./components/generics/List"
 
 function App() {
   const personName = {
