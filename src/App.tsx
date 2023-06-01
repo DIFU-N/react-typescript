@@ -13,6 +13,7 @@ import { ClassCounter } from "./components/class/Counter"
 import { MutableRef } from "./components/ref/MutableRef"
 import { Counter } from "./components/state/Counter"
 import { LoggedIn } from "./components/state/LoggedIn"
+import { List } from "./generics/List"
 
 function App() {
   const personName = {
@@ -53,6 +54,20 @@ function App() {
       <MutableRef />
       <ClassCounter message="this is how legends are made!" />
       <Private isLoggedIn={true} Component={Public} />
+      <List items={['okay', 'this', 'is']} onClick={(item) => console.log(item)} />
+      {/* in a situation where you want to pass any type of array as a prop , this would not work */}
+      {/* this is where generic types are introduced */}
+      <List items={[1,2,3,3,5]} onClick={(item) => console.log(item)} />
+      <List items={[{
+        name: 'asko',
+        age: 12
+      }, {
+        name: 'asxx',
+        age: 22
+      }, {
+        name: 'minl',
+        age: 39
+      }]} onClick={(item) => console.log(item)} />
     </div>
   )
 }
