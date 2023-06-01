@@ -7,6 +7,7 @@ import Person from "./components/Person"
 import PersonList from "./components/PersonList"
 import { Status } from "./components/Status"
 import { StylesContainer } from "./components/StylesContainer"
+import { ClassCounter } from "./components/class/Counter"
 import { MutableRef } from "./components/ref/MutableRef"
 import { Counter } from "./components/state/Counter"
 import { LoggedIn } from "./components/state/LoggedIn"
@@ -48,6 +49,7 @@ function App() {
       <LoggedIn />
       <Counter />
       <MutableRef />
+      <ClassCounter message="this is how legends are made!" />
     </div>
   )
 }
