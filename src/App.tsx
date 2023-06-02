@@ -16,6 +16,7 @@ import { LoggedIn } from "./components/state/LoggedIn"
 import { List } from "./components/generics/List"
 import { Toast } from "./components/template literals/Toast"
 import { CustomButton } from "./components/html/Button"
+import { Text } from "./components/polymorphic/Text"
 
 function App() {
   const personName = {
@@ -74,6 +75,19 @@ function App() {
       <CustomButton variant="primary">
         Are you ready?
       </CustomButton>
+      {/* with t his, all the text components, come out in divs, if we weanted to use different htrml elements for each one */}
+      {/* how would it happen? */}
+
+      <Text as='h1' color="primary" size="sm">
+        Heading
+      </Text>
+      <Text as='p' color="primary" size="sm">
+        Paragraph
+      </Text>
+      {/* now, sometimes the label element takes in an htmlFor attribute, but that would throw an error here */}
+      <Text as='label' htmlFor="" color="primary" size="sm">
+        Label
+      </Text>
     </div>
   )
 }
